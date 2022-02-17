@@ -1,6 +1,13 @@
+.universities-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gap);
+}
+
 .universities-item {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   border-radius: 4px;
   box-shadow:
     0 80px 80px -20px rgba(154, 156, 165, 0.08),
@@ -8,4 +15,46 @@
     0 12px 10px -6px rgba(154, 156, 165, 0.04),
     0 4px 4px -4px rgba(30, 33, 44, 0.03);
   background: #fff;
+
+  &__content {
+    @include flex-column-center;
+    padding: 15px;
+  }
+
+  &__descr {
+    margin-top: 0;
+  }
+
+  &__btn {
+    display: none;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    font-weight: 500;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    padding: 10px 25px;
+  }
+}
+
+.load-more {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--light-color);
+  margin: 40px 0;
+
+  &--top {
+    margin-top: 0;
+  }
+
+  svg {
+    color: inherit;
+    fill: var(--light-color);
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
 }

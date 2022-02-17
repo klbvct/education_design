@@ -30,6 +30,14 @@ a {
   color: var(--dark-color);
 }
 
+p {
+  line-height: 1.5;
+}
+
+ul {
+  line-height: 1.5;
+}
+
 .is-hidden {
   display: none !important; /* stylelint-disable-line declaration-no-important */
 }
@@ -104,6 +112,7 @@ a {
 .main-title {
   font-size: 60px;
   line-height: 110%;
+  margin-bottom: 80px;
 }
 
 .main-desc {
