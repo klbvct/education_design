@@ -1,19 +1,9 @@
 .content {
 
   &__text {
-    height: 600px;
-    position: relative;
+
     overflow: hidden;
   }
-  .q {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-  }
-  .grad {
-    background-image: linear-gradient(#ffffff82, #ffffffd9, #ffffff);
-  }
+
 }
 
