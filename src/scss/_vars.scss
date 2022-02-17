@@ -1,0 +1,15 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Futura PT", sans-serif;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --grid-gap: 40px;
+
+  // colors
+  --light-color: #a8a3a3;
+  --accent-color: #5d71dd;
+  --dark-color: #2f2222;
+}

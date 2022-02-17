@@ -1,0 +1,14 @@
+.hero {
+  background-color: #f9f9f9;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--grid-gap);
+  }
+
+  &__btn {
+    margin: 40px 0;
+  }
+}
+

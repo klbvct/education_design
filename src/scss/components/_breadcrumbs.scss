@@ -1,0 +1,25 @@
+.breadcrumbs {
+  @include flex-v-center;
+
+  &__item {
+    margin-top: 20px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      &::after {
+        position: absolute;
+        content: "|";
+
+        color: var(--light-color);
+        right: -15px;
+        top: 0;
+      }
+    }
+  }
+
+  &__link {
+    color: var(--light-color);
+  }
+}
