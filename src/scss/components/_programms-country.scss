@@ -1,0 +1,28 @@
+.programms-country {
+  margin-bottom: 50px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--grid-gap);
+  }
+
+  &__item {
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow:
+      0 80px 80px -20px rgba(154, 156, 165, 0.08),
+      0 30px 24px -10px rgba(154, 156, 165, 0.05),
+      0 12px 10px -6px rgba(154, 156, 165, 0.04),
+      0 4px 4px -4px rgba(30, 33, 44, 0.03);
+    background: #fff;
+    border: 1px solid var(--accent-color);
+
+    @include flex-all-center;
+
+    h3 {
+     color: var(--accent-color);
+     font-weight: 500;
+    }
+  }
+}

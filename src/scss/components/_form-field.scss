@@ -1,0 +1,11 @@
+.form-field {
+  margin-right: 24px;
+
+  &__input {
+    background: #fff;
+    border: 1px solid #D7DADD;
+    width: 244px;
+    height: 44px;
+    border-radius: var(--border-radius);
+  }
+}

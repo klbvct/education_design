@@ -1,0 +1,33 @@
+.footer {
+  background-color: #2b2c30;
+  a {
+    color: #949496;
+  }
+
+
+  &__center {
+    padding: 40px 20px;
+  }
+
+  &__map, &__phones, &__adress {
+    @include flex-all-center;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    @include flex-v-center;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    img {
+      margin-right: 5px;
+      color: #949496;
+      width: 20px;
+    }
+  }
+
+}

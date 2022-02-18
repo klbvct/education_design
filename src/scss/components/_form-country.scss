@@ -1,0 +1,22 @@
+.form-country {
+  background-color: #f9f9f9;
+  padding: 60px 40px 80px 40px;
+  @include flex-all-sb;
+
+  h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    span {
+      color: var(--accent-color);
+    }
+  }
+
+}
+
+.form__content {
+  @include flex-v-center;
+
+  .form__text {
+    color: var(--light-color);
+  }
+}
