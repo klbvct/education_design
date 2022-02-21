@@ -3,6 +3,7 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
+@import "media";
 
 // подключения компонентов страницы (большие)
 @import "./components/header";
@@ -11,6 +12,7 @@
 @import "./components/universities-country";
 @import "./components/apply-country";
 @import "./components/form-country";
+@import "./components/hero-university";
 @import "./components/footer";
 
 // подключения компонентов страницы (маленькие)
@@ -19,4 +21,5 @@
 @import "./components/breadcrumbs";
 @import "./components/form-field";
 @import "./components/programms-country";
-
+@import "./components/programms-university";
+@import "./components/price-university";

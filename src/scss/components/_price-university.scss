@@ -1,0 +1,19 @@
+.price-university {
+  margin-bottom: 50px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px var(--grid-gap);
+  }
+
+  &__item {
+    @include flex-v-center;
+
+    img {
+      margin-right: 20px;
+      width: 20px;
+    }
+
+  }
+}
