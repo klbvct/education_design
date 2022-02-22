@@ -6,6 +6,19 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--grid-gap);
+    @include small-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__content {
+    @include small-tablet {
+      text-align: center;
+    }
+
+    @include mobile {
+      text-align: left;
+    }
   }
 
   &__btn {
@@ -14,8 +27,10 @@
 
   .hero__img {
     max-width: 100%;
-    height: 100%;
     object-fit: cover;
+    @include small-tablet {
+      display: none;
+    }
   }
 }
 

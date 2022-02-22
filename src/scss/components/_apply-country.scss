@@ -5,18 +5,42 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--grid-gap);
+    @include small-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__content {
+    @include small-tablet {
+      text-align: center;
+    }
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  img {
+    @include small-tablet {
+      display: none;
+    }
   }
 
   .apply-title {
     font-size: 40px;
     line-height: 110%;
     margin: 40px 0;
+    @include tablet {
+      font-size: 36px;
+    }
   }
 
   .apply-desc {
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
+    @include tablet {
+      font-size: 18px;
+    }
 
     &--accent {
       color: var(--accent-color);

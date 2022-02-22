@@ -6,12 +6,29 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @include tablet {
+      gap: var(--grid-gap);
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__left {
+    @include small-tablet {
+      text-align: center;
+    }
   }
 
   &__right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    @include small-tablet {
+      justify-content: center;
+    }
   }
 
   &__items {
@@ -25,6 +42,10 @@
 
     width: 400px;
     padding: 25px 60px;
+
+    @include mobile {
+      width: auto;
+    }
   }
 
   &__item {

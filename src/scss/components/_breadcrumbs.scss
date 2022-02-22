@@ -22,5 +22,8 @@
   &__link {
     color: var(--light-color);
     font-size: 16px;
+    @include mobile {
+      font-size: 12px;
+    }
   }
 }

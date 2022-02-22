@@ -1,7 +1,7 @@
 .form-country {
   background-color: #f9f9f9;
   padding: 60px 40px 100px 40px;
-  @include flex-all-sb;
+  // @include flex-all-sb;
   margin-bottom: 50px;
 
   h2 {
@@ -12,12 +12,47 @@
     }
   }
 
+  @include small-tablet {
+    padding: 60px 0 100px 0;
+  }
+
 }
 
 .form__content {
-  @include flex-v-center;
+  @include flex-all-center;
+
+  @include tablet {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .form-field {
+      margin-right: 0;
+    }
+
+    & > * {
+      margin-bottom: 20px;
+      width: 60%;
+      flex-grow: initial;
+    }
+
+    .form-field__input {
+      width: 100%;
+    }
+  }
 
   .form__text {
     color: var(--light-color);
+  }
+
+  @include small-tablet {
+    & > * {
+      width: 85%;
+    }
+  }
+
+  @include mobile {
+    & > * {
+      width: 1100%;
+    }
   }
 }

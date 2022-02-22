@@ -1,4 +1,8 @@
 .nav {
+  @include small-tablet {
+    display: none;
+  }
+
   &__list {
     @include flex-v-center;
   }
